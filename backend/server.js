@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 // Allowed frontend origins
 const allowedOrigins = [
   "https://crm-application-five.vercel.app", // Vercel frontend
-  "http://localhost:5173" // local Vite frontend
+  "http://localhost:3000" // local Vite frontend
 ];
 
 // Dynamic CORS setup

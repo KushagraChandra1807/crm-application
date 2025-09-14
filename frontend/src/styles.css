@@ -1,3 +1,15 @@
+/* styles.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensure animations don't start until they are visible or for specific elements */
+.animate-fadeInUp {
+  opacity: 0; /* Hidden by default */
+}
+.animate-fadeInUp.delay-200 {
+  animation-delay: 0.2s;
+}
+.animate-fadeInUp.delay-400 {
+  animation-delay: 0.4s;
+}
