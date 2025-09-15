@@ -2,16 +2,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import landingPageImage from "../assets/landingpage.jpg";
+import logoImage from "../assets/logo.png"; 
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
       <header className="flex items-center justify-between px-12 py-6 shadow-sm bg-white sticky top-0 z-50">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-md bg-blue-900"></div>
-          <h1 className="text-xl font-bold text-gray-900">CRMPro</h1>
-        </div>
+        <div className="flex items-center gap-3">
+  {/* Logo Icon */}
+  <img
+    src={logoImage}
+    alt="ConnectFlow Logo"
+    className="h-12 w-auto object-contain"
+  />
+
+  {/* Logo Text */}
+  <div className="flex flex-col leading-tight">
+    <span className="text-xl font-bold text-gray-900">
+      Connect<span className="text-blue-900">Flow</span>
+    </span>
+    <span className="text-sm text-gray-500">
+      Seamless Relationships, Effortless Growth
+    </span>
+  </div>
+</div>
+
 
         <nav className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
           <Link to="#">Features</Link>

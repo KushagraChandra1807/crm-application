@@ -1,8 +1,9 @@
+// src/pages/Login.jsx
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import API from "../api";
 import { Mail, Lock } from "lucide-react";
-import logo from "../assets/logo.jpg"; // replace with your logo
+import logo from "../assets/logo.png";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -15,7 +16,7 @@ export default function Login() {
     const res = await API.post("/auth/login", { email, password });
     localStorage.setItem("token", res.data.token);
     localStorage.setItem("user", JSON.stringify(res.data.user));
-    navigate("/customers"); // ✅ go to customers page
+    navigate("/customers");
   } catch (err) {
     alert(err.response?.data?.message || "Login failed");
   }
@@ -28,8 +29,8 @@ export default function Login() {
         {/* Logo + Title */}
         <div className="flex flex-col items-center mb-6">
           <img src={logo} alt="CRMPro" className="h-12 w-12 rounded-lg mb-2" />
-          <h1 className="text-xl font-semibold text-gray-900">CRMPro</h1>
-          <p className="mt-1 text-gray-500 text-sm">Welcome back</p>
+          {/* Removed the CRMPro <h1> tag here */}
+          <p className="mt-1 text-gray-800 text-lg font-medium">WELCOME BACK</p>
           <p className="text-gray-400 text-xs">
             Sign in to your account to continue
           </p>
