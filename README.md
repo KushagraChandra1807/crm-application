@@ -155,8 +155,12 @@ npm test
 
 ---
 
-## 📸 Screenshots (Optional)
-_Add screenshots of your UI here for better presentation._
+## 📸 Screenshots
+<img width="1901" height="892" alt="landingpage" src="https://github.com/user-attachments/assets/32cde28f-e0a3-4bff-a1af-7cdc96840867" />
+<img width="1907" height="901" alt="signup" src="https://github.com/user-attachments/assets/5d8ff89c-0018-4751-9c92-663cb3800a62" />
+<img width="1888" height="902" alt="signin" src="https://github.com/user-attachments/assets/958b2560-d67a-4e3e-8e7b-41d8ab75a017" />
+<img width="1916" height="892" alt="customers" src="https://github.com/user-attachments/assets/16ab6fb1-2067-46a3-b8f3-493008ae66fb" />
+<img width="565" height="717" alt="customerdetail leads" src="https://github.com/user-attachments/assets/613f3215-3e50-452a-b606-2614c7f0e95a" />
 
 ---
 
